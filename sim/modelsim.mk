@@ -96,15 +96,15 @@ qsystest:
 
 
 .PHONY: com
-com: $(COMPILED_LIBRARY)/compiled $(RTL_LIBRARY) $(DEPS_DIR) $(COM_LOG_FILES)
+com: $(RTL_LIBRARY) $(DEPS_DIR) $(COM_LOG_FILES)
 
 #--------------------------------------------------
 #    Compile Altera library
 #--------------------------------------------------
 
-$(COMPILED_LIBRARY)/compiled:
+.PHONY: libcom
+libcom:
 	$(QSH) --simlib_comp -tool modelsim -language verilog -tool_path $(MODELSIM_BIN_PATH) -directory $(COMPILED_LIBRARY)/ -rtl_only
-	touch $@
 
 #--------------------------------------------------
 #    Compile HDL Sources

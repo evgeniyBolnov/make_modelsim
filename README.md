@@ -2,9 +2,10 @@
 
 ## Варианты применения
 - `make`(`make com`) - компиляция исходников
-- `make sim` - запуск симуляйии в консоли
-- `make gui` - запуск симуляйии в приложении
-- `make gtkwave` - запуск симуляйии и открытие waveform в gtkwave
+- `make libcom` - компиляция библиотек Altera
+- `make sim` - запуск симуляции в консоли
+- `make gui` - запуск симуляции в приложении
+- `make gtkwave` - запуск симуляции и открытие waveform в gtkwave
 - `make qsyscom` - компиляция qsys
 - `make qsyscom_force` - форсированная компиляция qsys
 - `make coverage` - симуляция в консоли и генерация отчетов о покрытии
